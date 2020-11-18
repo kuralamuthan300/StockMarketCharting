@@ -1,0 +1,28 @@
+<app-menu></app-menu>
+<br><br>
+
+<div class="container">
+    <h1>The Companies</h1>
+    <table class="table">
+    
+    <thead>
+        <tr>
+            <th>Company Id</th>
+            <th>Company Name</th>
+            <th>Company Ceo</th>
+            <th>Company Board</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr *ngFor="let company of companies">
+            <td>{{company.companyId }}</td>
+            <td>{{company.companyName}}</td>
+            <td>{{company.ceo}}</td>
+            <td>{{company.boardOfDirectors}}</td>
+            
+        </tr>
+    </tbody>
+
+</table>
+</div>

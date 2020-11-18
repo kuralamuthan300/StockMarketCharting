@@ -1,0 +1,11 @@
+<div class="container">
+<h1>Client Access</h1>
+<h2>Log In</h2>
+
+<div class="alert alert-warning" *ngIf=!isLoggedIn>{{errorMessage}}</div>
+
+Client Id : <input type="text" name="username" [(ngModel)]="username">
+Password : <input type="password" name="password" [(ngModel)]="password">
+
+<button (click)=handleLogin() class="btn btn-success">Login</button>
+</div>
